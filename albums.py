@@ -10,7 +10,7 @@ def build_album(artist_name, album_name, album_songs=None):
 
 album1 = build_album("Pink Floyd", "Dark Side", 12)
 album2 = build_album("The Doors", "1967")
-album3 = build_album("Guns n Roses", "Welcome to the Junlge")
+album3 = build_album("Guns n Roses", "Welcome to the Jungle")
 
 print(album1['artist'])
 print(album1['songs'])
@@ -26,5 +26,5 @@ while artist != 'q':
     else:
         alb = build_album(artist, album)
     print(alb)
-    
-    artist = input("Please enter name of artist: ") 
+
+    artist = input("Please enter name of artist: ")
