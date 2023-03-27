@@ -1,40 +1,40 @@
-def add_to_list(not_read, read):
-    """Method to create a list of read books and books i want to read"""
-    print("This is your reading list: \n")
-    for book in not_read:#for loop to pass books to new list
-        pass_to_list = input(f"Have you read this book?(y/n) \n{book}\n")
-        if pass_to_list == 'y':#if user enters yes, this will add book to already read list
-            read.append(book)#if i answer yes it skips the next book
-            #not_read.remove(book)
-
-
-def reading_list(books):
+#methods for dictionary with 2 keys(read, not-read), multiple values for keys
+def reading_list(books):#create list of books user wants to read
     book = input("Please enter book name(enter 'q' to end): \n")
-    while book != 'q':
+    while book != 'q':#while loop asking user to enter book until 'q' is entered
         books.append(book)
         book = input("Please enter book name(enter 'q' to end): \n")
     
     return books
 
-books = []
-read = []
+def add_to_list(books):
+    """Method to manipulate list and distribute into new list"""
+    read = []
+    not_read = []
+    print("This is your reading list: \n")
+    for book in books:
+        current_book = input(f"Have you read {book}? (y/n)\n")
+        if current_book == 'y':
+            read.append(book)
+        else:
+            not_read.append(book)
+    book_list = {'read': read, 'to_read': not_read}
+    return book_list
+
+
+def display_lists(book_lists):
+    """Displays dictionary with lists of books read and not read"""
+    for book_status, books in book_lists.items():
+        print(f"Books {book_status} are: ")
+        for book in books:
+            print(f"{book}")
+        print("")
+
+books = []#list of books made by user
+book_list = {}#dictionary with keys 'read' & 'not read' with lists as values
+
 reading_list(books)
-print("------------------------")
-print("This is your book list: \n")
-print("-----------------------")
-count = 0
-for book in books:
-    count = 0#for loop that will print out reading list
-    print(book)
-
-add_to_list(books, read)
-
-print("------------------------")
-print("This is your 'next to read' list: ")#for loop that will print modified list
-for book in books:
-    print(book)
-print("------------------------------")
-print("These are your 'already read' books: ")#for loop that will print appended list
-for book in read:
-    print(book)
-
+print('--------------------------------')
+book_list = add_to_list(books)
+print('----------------------------------')
+display_lists(book_list)
