@@ -10,7 +10,7 @@ def reading_list(books):#create list of books user wants to read
 def add_to_list(books):
     """Method to manipulate list and distribute into new list"""
     read = []
-    not_read = []
+    not_read = []#empty lists inside method to be filled
     print("This is your reading list: \n")
     for book in books:
         current_book = input(f"Have you read {book}? (y/n)\n")
@@ -28,7 +28,7 @@ def display_lists(book_lists):
         print(f"Books {book_status} are: ")
         for book in books:
             print(f"{book}")
-        print("")
+        print("")#print statement to leave an empty line
 
 books = []#list of books made by user
 book_list = {}#dictionary with keys 'read' & 'not read' with lists as values
