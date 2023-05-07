@@ -7,6 +7,7 @@ def reading_list(books):#create list of books user wants to read
     
     return books
 
+#method that will add bok given to list
 def add_to_list(books):
     """Method to manipulate list and distribute into new list"""
     read = []
@@ -21,7 +22,7 @@ def add_to_list(books):
     book_list = {'read': read, 'to_read': not_read}
     return book_list
 
-
+#method to display contents of book list
 def display_lists(book_lists):
     """Displays dictionary with lists of books read and not read"""
     for book_status, books in book_lists.items():

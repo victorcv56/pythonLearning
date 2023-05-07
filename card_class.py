@@ -1,5 +1,6 @@
 class Cards:
     """Create credit cards and manipulate them"""
+    cards = []#list to hold card objects
 
     def __init__(self, bank, apr, owed):
         """initialize cards with bank name, apr, and amount owed"""
@@ -13,5 +14,4 @@ class Cards:
         interest = (self.owed * (self.apr / 100) / 12) + (self.owed * .01)
         print(f"You will pay {interest} in monthly interest for this card")
         return int(interest)
-
 
