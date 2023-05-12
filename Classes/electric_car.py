@@ -1,6 +1,3 @@
-"""A set of classes that can be used to represent electric cars."""
-from car import Car 
-
 class Battery():
     """A simple attempt to model a battery for an electric car"""
     def __init__(self, battery_size=75, battery_charge=100):

@@ -1,12 +1,13 @@
 import card_class as cc
 
-cards = []
+cards = {}
 
+#method to add cards to empty list
 def add_to_list(cards, card):
     cards.append(card)
     return cards
 
-
+#creating card objects and passing attributes 
 wells_fargo = cc.Cards("wells", 18.49, 8800)
 citi = cc.Cards("citi", 28.99, 2131.83)
 costco = cc.Cards("costco", 19.74, 1938.46)
