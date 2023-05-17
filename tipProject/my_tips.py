@@ -1,5 +1,6 @@
+"""Simple attempt to create weekly tips list"""
 import tip_calc as calc
 
-newCalc = calc.tipCalculator(120, 15.5, 6.50)
-hourly = newCalc.get_hourly()
-newCalc.get_weekly()
+week1 = calc.tipCalculator(31, 4)
+hourly = week1.enter_tips()
+print(week1.get_hourly())
