@@ -14,21 +14,6 @@ class tipCalculator:
         self.hourly_wage = hourly_wage
         self.filepath = ''
 
-    # def get_hours(self):#want this to ask for user input and handle user input error
-    #     """Function that will check if hour input is integer"""
-    #     #I have to instantiate class in order to use this functon which
-    #     #does not work for what im trying to do...
-    #     #unless i instantiate without arguments
-    #     flag = True
-    #     while flag:
-    #         try: 
-    #             hours = int(input("Hours worked this week: "))
-    #         except ValueError:
-    #             print("Enter a valid number")
-    #         else: 
-    #             flag = False #changes flag to stop loop
-    #     return hours
-    
     def enter_tips(self):
         """Method that will prompt user to enter tips made daily 
         based on days worked."""
