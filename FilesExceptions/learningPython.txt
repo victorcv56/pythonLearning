@@ -1,0 +1,7 @@
+In Python you can count numbers.
+In python you can read files and print them.
+In python you can create objects and manipulate them.
+In python you can program anythin you can imagine.
+In python you can create games.
+In python you can add, subtract, divide.
+In python you can expand your knowledge.

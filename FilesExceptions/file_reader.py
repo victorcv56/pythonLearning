@@ -1,11 +1,19 @@
-filename = 'Pi/Pi1MDP.txt'
+filename = 'learningPython.txt'
 
-with open(filename) as pi:
-    lines = pi.readlines()
+#Opening file and saving contents to a variable..
+#with open(filename) as file_object:
+ #   contents = file_object.read()
 
-pi_string = ''
-for line in lines:
-    pi_string += line.rstrip()
 
-print(f"{pi_string}")
-print("There are %d digits in pi" % len(pi_string))
+#Opening a file and reading it line by line..
+#with open(filename) as file_object:
+  #  for line in file_object:
+   #     print(line.rstrip())
+
+#Opening a file and saving lines to work outside 'with' block..
+with open(filename) as fo:
+    for line in fo:
+        file1 = line.replace("python", "java")
+        print(line.rstrip())
+        print(file1.rstrip())
+        print(line.rstrip())

@@ -3,7 +3,7 @@ import write_tips as write
 class tipCalculator:
     """tip calculator that will help make calculations based on tips made"""
     
-    def __init__(self, hours_worked, days_worked, hourly_wage = 15.5):
+    def __init__(self, hours_worked, days_worked, hourly_wage=15.5): 
         """Create a calculator that takes hours worked, days worked,
         and hourly wage in that order."""
         
@@ -14,14 +14,38 @@ class tipCalculator:
         self.hourly_wage = hourly_wage
         self.filepath = ''
 
+    # def get_hours(self):#want this to ask for user input and handle user input error
+    #     """Function that will check if hour input is integer"""
+    #     #I have to instantiate class in order to use this functon which
+    #     #does not work for what im trying to do...
+    #     #unless i instantiate without arguments
+    #     flag = True
+    #     while flag:
+    #         try: 
+    #             hours = int(input("Hours worked this week: "))
+    #         except ValueError:
+    #             print("Enter a valid number")
+    #         else: 
+    #             flag = False #changes flag to stop loop
+    #     return hours
+    
     def enter_tips(self):
         """Method that will prompt user to enter tips made daily 
         based on days worked."""
-        #logic that will fill list with user input and for loop
-        #asking user for tips made each day 
-        for i in range(self.days_worked):
-            money = input("Tips made day %d: " % (i + 1))
-            self.tips.append(money)
+        
+        flag = True
+        i = 1
+        while flag:#loop that will only accept numbers as user input 
+            print("Enter '0' to stop entering tips.")
+            try:
+                money = int(input("Tips made day {}: ".format(i)))
+                self.tips.append(money)
+            except ValueError:
+                print("\nEnter only numbers.\n")
+            else:
+                i += 1
+                if money == 0:
+                    flag = False    
         self.get_hourly()#calls get_hourly method to change total_tips
 
     def total_tips(self):
@@ -50,7 +74,4 @@ class tipCalculator:
         #calling methods inside class so no need to call them again
         write.write_info(self.filepath, self.get_hourly(self.weekly_tips), self.days_worked, 
                          self.hourly_wage, self.weekly_tips)
-        
-#need to figure out what else to add to this class to make it a funcitoning app
-#Also want to make it a nice format in order to write to file weekly
-#Automate it every end of week so i can keep track of tips
+    

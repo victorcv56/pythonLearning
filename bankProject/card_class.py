@@ -3,13 +3,16 @@
 class Cards:
     """Create credit cards and manipulate them"""
     
-
+    #Initialize card object that will ask for bank name, 
+    # annual rate, and amount owed.
     def __init__(self, bank, apr, owed):
         """initialize cards with bank name, apr, and amount owed"""
         self.bank = bank
         self.apr = apr
         self.owed = owed 
-
+        
+    
+    #Method that will append new card object to existing object list
     def fill_list(self, card):
         """function to fill list of card objects"""
         self.card_list.append(card)

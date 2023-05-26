@@ -1,0 +1,9 @@
+05-26-23
+	Day #1: 120
+	Day #2: 140
+	Day #3: 300
+	Day #4: 200
+	Day #5: 220
+	Day #6: 0
+
+Your total tips this week: 980
