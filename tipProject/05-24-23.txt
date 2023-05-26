@@ -1,0 +1,62 @@
+05-24-23
+	Day #1: 140
+	Day #2: 150
+	Day #3: 340
+	Day #4: 200
+
+Your total tips this week: 0
+You worked 32.00 hours in 4 days this week.
+You made 15.50/hr and made 830 total in tips.
+05-24-23
+	Day #1: 100
+	Day #2: 150
+	Day #3: 170
+	Day #4: 200
+
+Your total tips this week: 0
+You worked 30.00 hours in 4 days this week.
+You made 15.50/hr and made 620 total in tips.
+05-24-23
+	Day #1: 100
+	Day #2: 150
+	Day #3: 140
+	Day #4: 200
+
+Your total tips this week: 0
+You worked 30.00 hours in 4 days this week.
+You made 15.50/hr and made 590 total in tips.
+
+05-24-23
+	Day #1: 200
+	Day #2: 140
+	Day #3: 100
+
+Your total tips this week: 0
+You worked 34.00 hours in 3 days this week.
+You made 15.50/hr and made 440 total in tips.
+
+05-24-23
+	Day #1: 200
+	Day #2: 150
+	Day #3: 1445
+	Day #4: 12
+
+Your total tips this week: 1807
+You worked 32.00 hours in 4 days this week.
+You made 15.50/hr and made 1807 total in tips.
+
+05-24-23
+	Day #1: 120
+	Day #2: 100
+	Day #3: 200
+
+Your total tips this week: 420
+05-24-23
+	Day #1: 120
+	Day #2: 140
+	Day #3: 200
+
+Your total tips this week: 460
+You worked 30.83 hours in 3 days this week.
+You made 15.50/hr and made 460 total in tips.
+

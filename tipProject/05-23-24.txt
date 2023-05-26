@@ -1,0 +1,9 @@
+05-23-24
+	Day #1: 100
+	Day #2: 150
+	Day #3: 180
+	Day #4: 200
+
+Your total tips this week: 0
+You worked 30.00 hours in 4 days this week.
+You made 15.50/hr and made 630 total in tips.
