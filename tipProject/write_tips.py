@@ -4,7 +4,6 @@
 def log_tips(tips, total):
     filename = input("Enter date(mm-dd-yy): ")
     filepath = filename + ".txt"
-    #ilepath = filename + ".txt"
     
     with open(filepath, 'a') as fo:
         fo.write(filename + "\n")

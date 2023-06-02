@@ -7,8 +7,8 @@ class tipCalculator:
         """Create a calculator that takes hours worked, days worked,
         and hourly wage in that order."""
         
-        self.tips = []
-        self.weekly_tips = 0
+        self.tips = [] #list of tips entered by user
+        self.weekly_tips = 0 #initialize weekly tips to later add to it
         self.hours_worked = hours_worked
         self.days_worked = days_worked
         self.hourly_wage = hourly_wage
@@ -47,7 +47,10 @@ class tipCalculator:
         #logic here needs to include hours worked during week, tips made in week
         #and will average out totals in order to return $ made per hour    
         hourly = (self.weekly_tips + (self.hourly_wage * self.hours_worked)) / self.hours_worked
+        self.hourly_wage = hourly
+
         return hourly
+        
     
     def log_tips(self):
         """Call on filewriter module to log weekly tips to new .txt file"""
@@ -57,6 +60,18 @@ class tipCalculator:
     def log_info(self):
         """Method that will display all info provided by methods"""
         #calling methods inside class so no need to call them again
-        write.write_info(self.filepath, self.get_hourly(self.weekly_tips), self.days_worked, 
-                         self.hourly_wage, self.weekly_tips)
+        write.write_info(self.filepath, self.hours_worked, self.days_worked, 
+                         self.get_hourly(), self.weekly_tips)
+    
+    #make a function that can calculate hours worked for us by
+    #asking us our in and out time of each day?
+    def get_hours(self, time_in, time_out):
+        """Method that will calculate total hours worked for user each day."""
+        total_hours = time_out - time_in
+        print(total_hours)
+
+
+    #maybe add smome lists so i can practice list manipulation with this prigram
+    #but for now i cant think of any more moduels or uses 5/27
+    
     
