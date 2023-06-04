@@ -1,0 +1,9 @@
+06-03-23
+	Day #1: 150
+	Day #2: 220
+	Day #3: 0
+
+Your total tips this week: 370
+You worked 14.00 hours in 2 days this week.
+You made 41.93/hr and made 370 total in tips.
+
