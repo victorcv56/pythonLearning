@@ -1,18 +1,30 @@
-"""Practicing json module"""
+"""Favorite number 10-11"""
 import json
 
-def remember_name():
-    """This module will remember and store a given string"""
-    filename = "given_name.json"
-    try: 
+def get_stored_num():
+    """Asks user for favorite number and stores it"""
+    try:
+        filename = 'fave_num.json'
         with open(filename) as f:
-            username = json.load(f)
+            num = json.load(f)
     except FileNotFoundError:
-        username = input("What is your name? ")
-        with open(filename, 'w') as f:
-            json.dump(username, f)
-            print("Got your name, {}".format(username))
+        return None
     else:
-        print("Welcome back, {}".format(username))
+        return num
 
-remember_name()
+def get_new_num():
+    """Asks for new number"""
+    num = input("What is your fave number? ")
+    filename = 'fave_num.json'
+    with open(filename, 'w') as f:
+            json.dump(num, f)
+
+def say_num():
+    """Looks for number and says it back to user"""
+    num = get_stored_num()
+    if num:
+        print("Your favorite number is {}!".format( num))
+    else:
+        num = get_new_num()
+
+say_num()

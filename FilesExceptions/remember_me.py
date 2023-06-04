@@ -12,6 +12,13 @@ def get_stored_username():
     else:
         return username
 
+def get_new_username():
+    """Prompt for a new username"""
+    username = input("What is your name? ")
+    filename = 'username.json'
+    with open(filename, 'w') as f:
+        json.dump(username, f)
+    return username
 
 def greet_user():
     """This function will greet user by name"""
@@ -19,11 +26,8 @@ def greet_user():
     if username:
         print("Welcome back, {}".format(username))
     else:
-        username = input("What is your name? ")
-        filename = 'username.json'
-        with open(filename, 'w') as f:
-            json.dump(username, f)
-            print("We'll remember you next time, {}".format(username))
+        username = get_new_username()
+        print("We'll remember you next time, {}".format(username))
 
 
 greet_user()
