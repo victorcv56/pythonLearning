@@ -11,7 +11,6 @@ games_bought = int(input("How many games did you buy? "))#i can use this variabl
 def minimum_price():
     """Calculate the minimum price each game should sell to make profit"""
     money_spent = total_spent()
-    #games_bought = int(input("How many games did you buy? "))#i can use this variable to create new method(fill dictionary) 
     ##NEED TO REFACTOR AND CLEAN CODE
     minimum = money_spent / games_bought
     fill_list(games_bought, video_games)
@@ -42,6 +41,8 @@ def fill_list(games, list):
     price = input("Game price: ")
     while flag:
         list['game_name'] = name
+        if 'game_name' == 'q':
+            break
         list['price'] = price
         name = input("Game name(enter 'q' to finish): ")
         if name == 'q':#when user wants to exit loop enter 'q' to change flag to false
