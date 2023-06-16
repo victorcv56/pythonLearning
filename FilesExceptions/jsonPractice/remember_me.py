@@ -3,8 +3,9 @@ import json
 
 def get_stored_username():
     """Get stored username if file exists"""
-    filename = 'username.json'
+    filename = 'username.json'#name of file
     try:
+        #attempt to open json file
         with open(filename) as f:
             username = json.load(f)
     except FileNotFoundError:
@@ -23,11 +24,13 @@ def get_new_username():
 def greet_user():
     """This function will greet user by name"""
     username = get_stored_username()
-    if username:
-        print("Welcome back, {}".format(username))
+    ans = input("Is this {}?\n".format(username.title()))
+    
+    if ans == 'yes':
+        print("Welcome back, {}".format(username.title()))
     else:
         username = get_new_username()
-        print("We'll remember you next time, {}".format(username))
+        print("We'll remember you next time, {}".format(username.title()))
 
 
 greet_user()
