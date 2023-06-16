@@ -1,0 +1,122 @@
+{
+    "game 1": {
+        "name": "Red Dead Redemption 2",
+        "price": 350,
+        "cost": 180
+    },
+    "game 2": {
+        "name": "Final Fantasy XV",
+        "price": 250,
+        "cost": 180
+    },
+    "game 3": {
+        "name": "Dragon Ball Kakarot",
+        "price": 400,
+        "cost": 180
+    },
+    "game 4": {
+        "name": "God of War",
+        "price": 250,
+        "cost": 180
+    },
+    "game 5": {
+        "name": "GreedFall",
+        "price": 200,
+        "cost": 180
+    },
+    "game 6": {
+        "name": "WWE 2k22",
+        "price": 300,
+        "cost": 180
+    },
+    "game 7": {
+        "name": "Kingdoms of Amalur: Re-Reckoning",
+        "price": 200,
+        "cost": 180
+    },
+    "game 8": {
+        "name": "Batman: Arkham Knight",
+        "price": 200,
+        "cost": 107
+    },
+    "game 9": {
+        "name": "Spider-Man: Miles Morales",
+        "price": 400,
+        "cost": 107
+    },
+    "game 10": {
+        "name": "Tekken 7 ",
+        "price": 300,
+        "cost": 107
+    },
+    "game 11": {
+        "name": "Dishonored",
+        "price": 200,
+        "cost": 107
+    },
+    "game 12": {
+        "name": "Dishonored 2 ",
+        "price": 250,
+        "cost": 108
+    },
+    "game 13": {
+        "name": "Rise of the Tomb Raider(complete)",
+        "price": 250,
+        "cost": 107
+    },
+    "game 14": {
+        "name": "Rise of the Tomb Raider",
+        "price": 200,
+        "cost": 107
+    },
+    "game 15": {
+        "name": "Dragon Age: Inquisition",
+        "price": 200,
+        "cost": 107
+    },
+    "game 16": {
+        "name": "Spider-Man",
+        "price": 250,
+        "cost": 107
+    },
+    "game 17": {
+        "name": "The Last of Us 2 ",
+        "price": 400,
+        "cost": 107
+    },
+    "game 18": {
+        "name": "Fallout 4 ",
+        "price": 250,
+        "cost": 115
+    },
+    "game 19": {
+        "name": "Little Nightmares 2 ",
+        "price": 300,
+        "cost": 227
+    },
+    "game 20": {
+        "name": "Devil May Cry 5",
+        "price": 350,
+        "cost": 290
+    },
+    "game 21": {
+        "name": "DMC",
+        "price": 250,
+        "cost": 221
+    },
+    "game 22": {
+        "name": "Alien Isolation",
+        "price": 300,
+        "cost": 255
+    },
+    "game 23": {
+        "name": "Hades ",
+        "price": 400,
+        "cost": 184
+    },
+    "game 24": {
+        "name": "Final Fantasy VII",
+        "price": 400,
+        "cost": 107
+    }
+}
