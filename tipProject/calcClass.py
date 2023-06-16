@@ -11,7 +11,7 @@ class tipCalculator:
         self.weekly_tips = 0 #initialize weekly tips to later add to it
         self.hours_worked = hours_worked
         self.days_worked = days_worked
-        self.hourly_wage = hourly_wage
+        self.hourly_wage = hourly_wage  
         self.filepath = ''
 
     def enter_tips(self):
@@ -74,4 +74,5 @@ class tipCalculator:
     #maybe add smome lists so i can practice list manipulation with this prigram
     #but for now i cant think of any more moduels or uses 5/27
     
+    #want to add json handling in order to save data and reuse later
     
