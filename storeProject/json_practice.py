@@ -8,13 +8,12 @@ def individual_price(lot_price, num_games):
     price = lot_price / num_games
     return price
 
-#DATA HANDLING
+#DATA HANDLING###
 def retrieve_data(filepath):
     """Access json data and sabe it to new list variable"""
     try:
         with open(filepath) as f:
             list = json.load(f)
-            #print(json.dumps(list, indent=4, sort_keys=True))
     except FileNotFoundError:
         with open(filepath, 'w') as f:
             json.dump(games_catalogue, f, sort_keys=True, indent= 4)#Learning python library
@@ -31,7 +30,7 @@ def get_keys(game_list):
         game_name = game_list.get(game_list)
         print(game_name)
     
-#DATA HANDLING
+#DATA HANDLING###
 def add_games(game_list, filepath):
     """Want to add games to list without rewriting file, so maybe convert to 
     json string first then pass that string to file"""

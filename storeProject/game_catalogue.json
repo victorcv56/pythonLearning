@@ -65,56 +65,41 @@
         "cost": 107
     },
     "game 14": {
-        "name": "Rise of the Tomb Raider",
-        "price": 200,
-        "cost": 107
-    },
-    "game 15": {
         "name": "Dragon Age: Inquisition",
         "price": 200,
         "cost": 107
     },
-    "game 16": {
-        "name": "Spider-Man",
-        "price": 250,
-        "cost": 107
-    },
-    "game 17": {
+    "game 15": {
         "name": "The Last of Us 2 ",
         "price": 400,
         "cost": 107
     },
-    "game 18": {
+    "game 16": {
         "name": "Fallout 4 ",
         "price": 250,
         "cost": 115
     },
-    "game 19": {
+    "game 17": {
         "name": "Little Nightmares 2 ",
-        "price": 300,
+        "price": 350,
         "cost": 227
     },
-    "game 20": {
+    "game 18": {
         "name": "Devil May Cry 5",
         "price": 350,
         "cost": 290
     },
-    "game 21": {
-        "name": "DMC",
-        "price": 250,
-        "cost": 221
-    },
-    "game 22": {
+    "game 19": {
         "name": "Alien Isolation",
         "price": 300,
         "cost": 255
     },
-    "game 23": {
+    "game 20": {
         "name": "Hades ",
         "price": 400,
         "cost": 184
     },
-    "game 24": {
+    "game 21": {
         "name": "Final Fantasy VII",
         "price": 400,
         "cost": 107
