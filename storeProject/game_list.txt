@@ -1,0 +1,29 @@
+name : God of War 
+cost : 129 
+price : 350 
+name : Little Nightmares 2 
+cost : 227 
+price : 350 
+name : The Last of Us 2 
+cost : 158 
+price : 450 
+name : Tekken 7 
+cost : 108 
+price : 300 
+name : Final Fantasy 7 
+cost : 200 
+price : 400 
+name : Fallout 4 
+
+cost : 107 
+
+price : 300 
+
+name : Mass Effect Trilogy 
+cost : 200 
+price : 400 
+
+name : TLOU2 
+cost : 200 
+price : 450 
+
